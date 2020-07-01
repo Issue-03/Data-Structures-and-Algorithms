@@ -9,7 +9,7 @@ long getMaxArea(long long hist[],int n) {
 
     while(i<n) {
 
-        if(ind.empty() && hist[ind.top()]<=hist[i]) 
+        if(ind.empty() || hist[ind.top()]<=hist[i]) 
         ind.push(i++);
 
         else {
